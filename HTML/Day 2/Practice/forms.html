@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="" method="">
+        <label for="username">Username: </label>
+        <input type="text" id="username" required placeholder="Enter your username"><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" required id="password" placeholder="Enter your password"><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" required id ="email" placeholder="Enter your email"><br><br>
+
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label><br><br>   <!--name:"gender" To choose only one option in radion button -->
+
+        <label for="skills">Skills:</label>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skills" value="HTML">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skills" value="CSS">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="skills" value="JavaScript"><br><br>   <!-- name and value are used to send the data to the backend-->
+
+        <textarea name="" id=""></textarea> <br><br>
+        <select name="City" id="">
+            <option value="">Select City</option>
+            <optgroup label="Punjab">   
+                <option value="">Jalandhar</option>
+                <option value="">Phagwara</option>
+                <option value="">Ludhiana</option>
+            </optgroup>
+                <optgroup label="Haryana">
+                    <option value="">Karnal</option>
+                    <option value="">Panipat</option>
+                    <option value="">Kurukshetra</option>
+                </optgroup>
+
+        </select><br><br>
+        <input type="file"><br><br>
+        <input type="datetime-local"><br><br>
+        <input type="date"><br><br>
+        <input type="time">
+        <input type="range" min="10" max="100"><br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
