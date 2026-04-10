@@ -30,7 +30,12 @@ let result = users.some(ele => ele.username === inputData.username)
 
 if(result){
     let valid = users.find(pass => pass.password === inputData.password)
-    console.log("User Details: ",valid)
+    if(valid.password == inputData.password){
+        console.log("Welcome to Home Page")
+        console.log(valid)
+    }else{
+        console.log("Invalid Password")
+    }
 }
 else{
     console.log("User Not found")
