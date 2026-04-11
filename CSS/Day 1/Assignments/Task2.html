@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<style>
+    h2{
+        color:green;
+    }
+
+    .text1{
+        color:darkorange;
+        font-weight:bold;
+    }
+
+    .text2{
+        color:darkorange;
+        font-style: italic;
+    }
+
+    .country>ul{
+        color: blue;
+    }
+
+    td:first-of-type{
+        color: blue;
+    }
+
+    td:nth-of-type(2){
+        color:red;
+    }
+
+    label{
+        color:brown;
+    }
+
+    fieldset{
+        color: brown;
+    }
+
+</style>
+<body>
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur <span class="text1">adipisicing elit. Maxime provident</span> reiciendis earum eveniet suscipit corporis asperiores dolor. <span class="text1">Ab ipsum, quibusdam consectetur </span>tempora, deleniti <span class="text2"><i>porro praesentium numquam</i></span> debitis minima at possimus!</p>
+
+    <h2>Our Locations</h2>
+    <ul class="country">
+        <li>USA</li>
+        <ul>
+            <li>New York</li>
+            <li>Columbs</li>
+            <li>Austin</li>
+            <li>Philly</li>
+        </ul>
+        <li>World</li>
+        <ul>
+            <li>Ottawa</li>
+            <li>Sydney</li>
+        </ul>
+    </ul>
+
+    <h2>Upcoming Classes</h2>
+    <table border="1" class="table">
+        <tr>
+            <th>Location</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>JavaScript & jQuery</td>
+        </tr>
+        <tr>
+            <td>San Francisco</td>
+            <td>HTML & CSS</td>
+        </tr>
+    </table>
+
+    <h2>Sign Up!</h2>
+    <form action="" method="post">
+        <label for="name" class="name">Name: </label>
+        <input type="text" required><br>
+
+        <label for="name" class="name">Email: </label>
+        <input type="email" autocomplete="on" required><br>
+        
+        <label for="location">Location: </label>
+        <select name="location" id="location">
+            <option value="San Franciso">San Franciso</option>
+            <option value="San Franciso">New York</option>
+        </select>
+
+        <fieldset>
+            <legend for="gender">Gender:</legend>
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male
+        </fieldset>
+
+        <br>
+        <label for="experince">Experince: </label><br>
+        <textarea class="experience"></textarea>
+        <br>
+
+        <button class="submit">Sign Up</button>
+    </form>
+    
+</body>
+</html>
