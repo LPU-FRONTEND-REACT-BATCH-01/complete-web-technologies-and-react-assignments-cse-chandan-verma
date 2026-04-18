@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children</title>
+    <style>
+        ul h1:first-child{
+            color: lightgreen;
+        }
+
+        ul li:last-child{
+            color: blueviolet;
+        }
+
+        ul li:nth-child(2){
+            color: lightblue;
+        }
+
+        ul li:first-of-type{
+            background-color: beige;
+        }
+
+        ul h1:last-of-type{
+            background-color: grey;
+        }
+
+        ul li:nth-of-type(3){
+            color:red;
+        }
+
+        ul li:nth-last-of-type(2){
+            color: darkcyan;
+        }
+
+        /*
+        ul li:nth-of-type(2n){               FOR EVEN OCCURENCE 
+            color:black
+        }
+        ul li:nth-of-type(2n + 1){            FOR ODD OCCURENCE 
+            color:black
+        } 
+        */
+
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>List of Bikes</h1>
+        <li>Royal Enfield(IRON)</li>
+        <li>Lord Splendor</li>
+        <li>KTM</li>
+        <li>R15</li>
+        <li>Ninja</li>
+        <p>Imposter</p>
+        <li>Ducati</li>
+        <li>BMW</li>
+
+        <h1>List of Cars</h1>
+        <li>BMW M5</li>
+        <li>Audi Q4</li>
+        <li>Range Rover</li>
+        <li>Defender</li>
+    </ul>
+</body>
+</html>

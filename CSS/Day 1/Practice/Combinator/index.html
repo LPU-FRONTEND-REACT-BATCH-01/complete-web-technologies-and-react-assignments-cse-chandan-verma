@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+</head>
+<style>
+    /* Descendant Selector */
+
+    /* This will select all the li elements that are descendants of an element with the class biryani and color them orange. It will not affect the li elements that are descendants of the lassi class. */
+
+    .biryani > li{
+        color: orange;
+    }
+
+    /* Child Selector */
+    .lassi li{
+        color: green;
+    }
+
+    /* General Sibling Selector- all the elements that come immediately after an h1 and are h3 will be affected */
+
+    h1~h3{       
+        color: red;                    
+    }
+
+    /* Adjacent Sibling Selector- only the first h2 that comes immediately after an h1 will be affected */
+
+    h1+h2{
+        color: blue;
+    }
+
+</style>
+<body>
+    <ul class = "biryani">
+        <h1>Ingredients for Paneer Biryani</h1>
+        <li>Rice</li>
+        <li>Paneer</li>
+        <div>
+            <ul>
+                <li>Grilled Paneer</li>
+                <li>Fried Paneer</li>
+                <li>Raw Paneer</li>
+            </ul>
+        </div>  
+        <li>Vegetables</li>
+        <h3>Additional Ingredients</h3>
+        <li>Water</li>
+        <li>Spices</li>
+    </ul>
+
+    <ul class = "lassi">
+        <h1 class = "title">Ingredients for Lassi</h1>
+        <li>Curd</li>
+        <li>Water</li>
+        <li>Sugar</li>
+        <h2>Additional Ingredients</h2>
+        <li>Kova</li>
+        <li>Malai</li>
+    </ul>
+</body>
+</html>
