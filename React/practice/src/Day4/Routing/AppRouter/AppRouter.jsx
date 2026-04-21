@@ -12,6 +12,7 @@ import Kids from '../Pages/Kids'
 import Category from '../Pages/Category'
 import ProductsLayout from '../Layouts/ProductsLayout'
 import ViewMore from '../Components/ViewMore'
+import '../CSS/index.css'
 
 const AppRouter = () => {
     const router = createBrowserRouter([
