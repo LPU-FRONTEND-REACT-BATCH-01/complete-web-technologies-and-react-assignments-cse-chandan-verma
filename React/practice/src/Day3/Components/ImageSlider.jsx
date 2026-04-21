@@ -28,7 +28,7 @@ const ImageSlider = () => {
 
   return (
     <div className='imageSlider'>
-        <h1>Image Slider</h1>
+        <h1 style={{fontStyle:'italic'}}>Image Slider</h1>
         <img src={images[currentImg]}></img><br />
         <button onClick={prevImage}>{"<"}</button>
         <button onClick={nextImage}>{">"}</button>
