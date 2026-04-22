@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+</head>
+<style>
+    a:link {     /* unvisited link */
+        color: red;
+    }
+
+    a:visited {  /* visited link */
+        color: green;
+    }
+
+    a:active {   /* selected link */
+        color: blue;
+    }
+    
+    h2:hover {    /* mouse over link */
+        background: lightgreen;
+    }
+
+    .focus:focus{
+        background-color:lightskyblue;
+    }
+
+    h1:hover::before{
+        content: "Add ";
+    }
+    h1:hover::after{
+        content: " in Cart ";
+    }
+    p:hover::first-line{
+        color:lightgray;
+    }
+
+</style>
+<body>
+    <a href="https://www.google.com">Click Here</a>
+
+    <h2>This is hover</h2>
+
+    <input class="focus" type="text">
+
+    <h1>Products</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, tenetur nihil, qui quasi facilis nobis et aut minus voluptate voluptatum impedit rem placeat a est alias dolorem excepturi? Laboriosam, animi.
+    Obcaecati labore, facere voluptatum nam molestiae consequatur, reprehenderit, ullam pariatur repudiandae in soluta quia alias nostrum similique! Reiciendis recusandae placeat architecto quos at! Dolorum, nostrum doloribus quos alias aspernatur numquam.
+    Reprehenderit provident laudantium reiciendis iste veniam dolor porro explicabo asperiores consequuntur? Eaque consequuntur optio consectetur doloremque dignissimos blanditiis et, quaerat quidem vero repudiandae non aliquam qui accusantium, obcaecati dolorem numquam?
+    Recusandae aliquam nam voluptate mollitia, quos et! Quis saepe expedita quidem laudantium consectetur non, praesentium quibusdam veniam dolorum? Culpa, architecto? Quasi mollitia nobis tempore possimus quibusdam, impedit facere in voluptatibus!
+    Vitae, nisi non qui eligendi tempore suscipit! Culpa in vitae id tempora enim dicta provident perspiciatis eos nobis odit labore, officia sint alias nesciunt accusantium optio perferendis sit maiores a.
+    Perferendis nemo dicta earum iusto eaque eum repellat laudantium ea sit amet molestias facere et, consectetur aperiam quibusdam officiis libero qui ipsa quia adipisci. Odit veritatis suscipit doloribus recusandae officiis!
+    Provident similique pariatur consequatur quam obcaecati sed, hic nulla deleniti nesciunt ab eligendi voluptatem harum quisquam quidem tempora! Quos aliquid cumque maiores, libero saepe modi similique corrupti minima eaque nostrum!
+    Adipisci explicabo temporibus facilis nihil, nostrum quisquam illo blanditiis, tenetur at maiores neque dolorem nemo totam! Distinctio unde animi ad, nisi nostrum qui at, fugit magnam mollitia quibusdam rerum maxime!
+    Sed porro dignissimos nobis, molestias veniam consequuntur. Rerum consequatur sequi velit officia illo ea atque molestiae? Similique perspiciatis quaerat quo libero esse alias aliquid optio, tenetur deleniti explicabo quasi aliquam!
+    Consequatur atque non accusantium iste, quam voluptatem cupiditate, unde ipsam repellendus, consequuntur commodi aliquid inventore obcaecati? Ex minima mollitia non quas, sequi quisquam ipsam ipsa porro error, temporibus itaque adipisci.</p>
+</body>
+</html>

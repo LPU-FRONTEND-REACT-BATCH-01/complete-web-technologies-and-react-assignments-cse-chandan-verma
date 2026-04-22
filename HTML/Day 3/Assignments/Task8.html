@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order</title>
+</head>
+<body>
+    <span><h2><mark>🍕 Pizza mania 🍕</mark></h2></span>
+    <fieldset>
+        <legend><h2>🍕 Pizza Order Form 🍕</h2></legend>
+
+<form>
+
+<table cellpadding="10", cellspacing="0">
+
+    <tr>
+        <td>First Name:</td>
+        <td><input type="text" placeholder="First Name" required></td>
+    </tr>
+
+    <tr>
+        <td>Last Name:</td>
+        <td><input type="text" placeholder="Last Name" required></td>
+    </tr>
+
+    <tr>
+        <td>Email:</td>
+        <td><input type="email" placeholder="abc@example.com" required></td>
+    </tr>
+
+    <tr>
+        <td>Contact:</td>
+        <td><input type="text" placeholder="Ex: 8989898989" required></td>
+    </tr>
+
+    <tr>
+        <td>Preferred Delivery Date:</td>
+        <td><input type="date" required></td>
+    </tr>
+
+    <tr>
+        <td>Size:</td>
+        <td>
+            <input type="radio" name="size" value="small"> Small
+            <input type="radio" name="size" value="medium"> Medium
+            <input type="radio" name="size" value="large"> Large
+        </td>
+    </tr>
+
+    <tr>
+        <td>Outlet:</td>
+        <td>
+            <select name="outlet">
+                <option value="">Select Outlet</option>
+                <option value="outlet1">Outlet 1</option>
+                <option value="outlet2">Outlet 2</option>
+            </select>
+        </td>
+    </tr>
+
+</table>
+
+<h3>Menu ↓</h3>
+
+<table cellpadding="10">
+
+    <tr>
+        <td><img src="https://plus.unsplash.com/premium_photo-1733266807710-f8f8de34416f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGF3YWlpYW4lMjBwaXp6YXxlbnwwfHwwfHx8MA%3D%3D" width="50"></td>
+        <td>
+            <input type="checkbox" name="menu" value="hawaiian"> Hawaiian (₹150.00 ₹<strike>170.00</strike>)
+        </td>
+        <td>
+            <select name="quantity_hawaiian">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td><img src="https://images.unsplash.com/photo-1692737580547-b45bb4a02356?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGVwcGVyb25pfGVufDB8fDB8fHww" width="50"></td>
+        <td>
+            <input type="checkbox" name="menu" value="pepperoni"> Pepperoni (₹140.00 ₹<strike>160.00</strike>)
+        </td>
+        <td>
+            <select name="quantity_pepperoni">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td><img src="https://images.unsplash.com/photo-1743615357871-eb04cd434c6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHZlZyUyMHBpenphfGVufDB8fDB8fHww" width="50"></td>
+        <td>    
+            <input type="checkbox" name="menu" value="vegetable"> Vegetable (₹130.00 ₹<strike>150.00</strike>)
+        </td>
+        <td>
+            <select name="quantity_vegetable">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </td>
+    </tr>
+
+</table>
+
+<h3>Extra Details ↓</h3>
+
+<table cellpadding="5">
+
+    <tr>
+        <td>💳 Credit Card:</td>
+        <td><input type="text" placeholder="1234-5678-9123-1111"></td>
+        <td><button type="button">Verify Card</button></td>
+    </tr>
+
+    <tr>
+        <td>📍 Pin:</td>
+        <td><input type="text" placeholder="421604"></td>
+    </tr>
+
+    <tr>
+        <td>🖼 Upload photo for discount:</td>
+        <td><input type="file"></td>
+    </tr>
+
+    <tr>
+        <td>📝 Additional Note:</td>
+        <td>
+            <textarea rows="4" cols="30" placeholder="
+If any additional requirement please mention here"></textarea>
+            </textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td>⭐ Rating:</td>
+        <td><input type="range" min="1" max="5"></td>
+    </tr>
+
+</table>
+
+<br>
+
+<center><input type="submit" value="Submit Order"></center>
+
+</form>
+    </fieldset>
+
+</body>
+</html>

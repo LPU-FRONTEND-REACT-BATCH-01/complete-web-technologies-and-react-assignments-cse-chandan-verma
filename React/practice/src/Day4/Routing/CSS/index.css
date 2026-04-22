@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PUMA";
+}
+
+@font-face {
+    font-family: "PUMA";
+    src: url("./Day4/Routing/assets/FF-DIN-for-Puma-W01-Regular.ttf");
+}
+
+.offer{
+width: 100%;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: black;
+}
+
+.logo{
+    width: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.menu-items{
+    font-weight: 600;
+    font-size: 16px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search{
+    color: white;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search-box{
+    width: 35%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid white;
+}
+
+.search-box:hover{
+    border: 2px solid white;
+}
+
+.icons{
+    font-size: 20px;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.lifestyle-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 189, 189);
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.card:hover{
+    box-shadow: 4px 2px 15px black;
+    
+}
+
+.beauty, .fragnances, .kids, .mens, .motorsport, .new, .sale, .sport, .women{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightyellow;
+    width: 100%;
+    height: 500px;
+}
+.footer{
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+}
+ul{
+    font-style:oblique;
+}
+
+.loading{
+    width: 100%;
+    height: 300px;
+    background-color: lightslategray;
+}
+
+.card-items{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card-items:hover{
+    border: 2px solid black;
+    box-shadow: 2px 0px 10px black;
+}
+
+.products-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    grid-template-rows: 350px;
+    grid-auto-flow: row;
+    grid-auto-rows: 350px;
+    gap: 20px;
+    padding: 10px 30px;
+}
+
+.viewMore{
+    margin: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products{
+    border-radius: 0px 50px;
+    width: 80%;
+    font-size: 20px;
+    gap: 10px;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}
+
+.prod-image{
+    background-color: rgb(250, 237, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewmore-Img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewmore-Img img{
+    width: 30%;
+}
+.prod-image img{
+    width: 80%;
+}
+
+.btn{
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    width: 500px;
+    height: 50px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
